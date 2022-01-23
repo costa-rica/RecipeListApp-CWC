@@ -17,11 +17,11 @@ class Recipe: Identifiable, Decodable {
     var cookTime:String
     var servings:Int
     var highlights:[String]
-    var ingredients:[Ingredients]
+    var ingredients:[Ingredient]
     var directions:[String]
 }
 
-class Ingredients: Identifiable, Decodable {
+class Ingredient: Identifiable, Decodable {
     var id:UUID?
     var name:String
     var num:Int?
